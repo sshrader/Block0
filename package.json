@@ -19,6 +19,7 @@
     "dbc-inspect": "tsx scripts/dbc-inspect.ts",
     "dbc-fees": "tsx scripts/dbc-claim-fees.ts",
     "key-base58": "tsx scripts/key-to-base58.ts",
+    "tx-info": "tsx scripts/tx-info.ts",
     "dbc-migrate": "tsx scripts/dbc-migrate.ts"
   },
   "dependencies": {
