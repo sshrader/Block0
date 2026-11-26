@@ -40,7 +40,7 @@ export default function Explore() {
       <section className="hero">
         <div>
           <p className="eyebrow mono">Solana memecoin launchpad · anti-snipe</p>
-          <h1>Fair launches. Block zero belongs to the dev.</h1>
+          <h1>Fair launches. <span className="grad">Block zero belongs to the dev.</span></h1>
           <p className="lede">
             Every coin on Block0 trades on a Meteora bonding curve with a launch fee that starts high and decays fast. The creator's own buy is the only one
             that skips it, so snipers pay for being early and everyone else gets a fairer entry.

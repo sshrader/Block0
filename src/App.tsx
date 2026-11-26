@@ -10,7 +10,7 @@ import CoinPage from './pages/CoinPage';
 import Admin from './pages/Admin';
 
 function Mark() {
-  return <img className="paw" src="/logo.png" width={32} height={32} alt="" />;
+  return <img className="mark" src="/logo.png" width={32} height={32} alt="" />;
 }
 
 export default function App() {
@@ -73,7 +73,7 @@ export default function App() {
         <div className="wrap top-in">
           <a className="brand" href={href.explore} aria-label="Block0 home">
             <Mark />
-            block0
+            <span>block<b>0</b></span>
           </a>
           <nav className="nav" aria-label="Main">
             {link('explore', 'Explore')}

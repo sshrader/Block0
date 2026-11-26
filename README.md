@@ -2,7 +2,7 @@
 
 A Solana memecoin launchpad on Meteora's Dynamic Bonding Curve (DBC) with Meteora's anti-snipe fee scheduler built in. Inspired by Pump.fun's block-zero fee: snipers pay for being first, the creator's own buy does not.
 
-Started from the Pawpad launchpad (same wallet flow, launch transaction, trade box and fee tools), with the AI pets removed.
+Started from an earlier launchpad (same wallet flow, launch transaction, trade box and fee tools), with its AI pets removed.
 
 ## How the anti-snipe works
 
