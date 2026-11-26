@@ -8,6 +8,7 @@ import Explore from './pages/Explore';
 import Launch from './pages/Launch';
 import CoinPage from './pages/CoinPage';
 import Admin from './pages/Admin';
+import BackgroundFx from './components/BackgroundFx';
 
 function Mark() {
   return <img className="mark" src="/logo.png" width={32} height={32} alt="" />;
@@ -62,6 +63,7 @@ export default function App() {
 
   return (
     <>
+      <BackgroundFx />
       <div className="banner">
         {IS_MAINNET ? (
           <>Live on Solana mainnet. Real money: memecoins are extremely risky, you can lose everything. Not financial advice.</>
