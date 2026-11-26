@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getAllMarkets, listCoins, type Coin, type Market } from '../lib/api';
-import { CURVE_ON, SNIPE } from '../config';
+import { CURVE_ON, SNIPE, SNIPE_ON } from '../config';
 import { pct } from '../lib/antisnipe';
 import { href } from '../router';
 import CoinCard from '../components/CoinCard';
@@ -41,8 +41,8 @@ export default function Explore() {
     <div className="wrap">
       <section className="hero">
         <div>
-          <p className="eyebrow mono">Solana memecoin launchpad · anti-snipe</p>
-          {CURVE_ON ? (
+          <p className="eyebrow mono">Solana memecoin launchpad{SNIPE_ON ? ' · anti-snipe' : ''}</p>
+          {CURVE_ON && SNIPE_ON ? (
             <>
               <h1>Sniping block 0 <span className="grad">costs {pct(SNIPE.startBps)}.</span></h1>
               <p className="lede">
@@ -53,14 +53,16 @@ export default function Explore() {
           ) : (
             <>
               <h1>Launch a coin <span className="grad">in one click.</span></h1>
-              <p className="lede">Connect a wallet, add an image and a name, and approve one transaction.</p>
+              <p className="lede">
+                Connect a wallet, add an image and a name, and approve one transaction.{CURVE_ON ? ' Your coin trades on a bonding curve from the first second.' : ''}
+              </p>
             </>
           )}
           <div className="badges">
             <span className="badge">One-click launch</span>
             {CURVE_ON && <span className="badge">Trades on a bonding curve from the first second</span>}
             {CURVE_ON && <span className="badge">Liquidity locked after graduation</span>}
-            <span className="badge">Anti-snipe fee on every launch</span>
+            {SNIPE_ON && <span className="badge">Anti-snipe fee on every launch</span>}
           </div>
           <div className="cta">
             <a className="btn primary" href={href.launch}>Launch a coin</a>
@@ -68,7 +70,7 @@ export default function Explore() {
         </div>
       </section>
 
-      {CURVE_ON && <HeroChain />}
+      {CURVE_ON && SNIPE_ON && <HeroChain />}
 
       <section className="filters">
         <h2>Launched coins{coins ? <span className="muted"> · {coins.length}</span> : null}</h2>

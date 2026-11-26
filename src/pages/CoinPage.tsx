@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { explorerAddress } from '../config';
+import { SNIPE_ON, explorerAddress } from '../config';
 import { getCoin, type Coin } from '../lib/api';
 import { ago } from '../lib/time';
 import { href } from '../router';
@@ -71,7 +71,7 @@ export default function CoinPage({ mint }: { mint: string }) {
           <div className="badges">
             <span className="badge">{ck} Mint revoked</span>
             <span className="badge">{ck} Freeze revoked</span>
-            {coin.curve && <span className="badge">{ck} Anti-snipe fee on launch</span>}
+            {coin.curve && SNIPE_ON && <span className="badge">{ck} Anti-snipe fee on launch</span>}
           </div>
         </div>
       </section>

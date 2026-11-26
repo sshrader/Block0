@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { PublicKey } from '@solana/web3.js';
-import { IS_MAINNET, SNIPE, explorerTx } from '../config';
+import { IS_MAINNET, SNIPE, SNIPE_ON, explorerTx } from '../config';
 import { SLOT_SECONDS, feeBpsAt, pct } from '../lib/antisnipe';
 import { curveStatus, quoteSwap, swap } from '../lib/dbc';
 import type { Coin } from '../lib/api';
@@ -47,9 +47,9 @@ export default function TradeBox({ coin }: { coin: Coin }) {
   }, [refresh]);
 
   // While the anti-snipe window is open, poll the slot so the fee shown counts down.
-  const inWindow = coin.launchSlot != null && slot !== null && slot - coin.launchSlot < SNIPE.durationSlots;
+  const inWindow = SNIPE_ON && coin.launchSlot != null && slot !== null && slot - coin.launchSlot < SNIPE.durationSlots;
   useEffect(() => {
-    if (coin.launchSlot == null) return;
+    if (!SNIPE_ON || coin.launchSlot == null) return;
     let alive = true;
     const tick = () => connection.getSlot('confirmed').then((s) => alive && setSlot(s)).catch(() => {});
     tick();

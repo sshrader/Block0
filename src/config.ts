@@ -33,3 +33,6 @@ export const FEE_CLAIMER: string = (import.meta.env.VITE_FEE_CLAIMER || '').trim
 // Leave the VITE_SNIPE_* values unset to use the defaults. They must match what was sent on chain.
 import { readSnipeParams } from './lib/antisnipe';
 export const SNIPE = readSnipeParams((name) => (import.meta.env as Record<string, string | undefined>)[`VITE_${name}`]);
+
+// True when the curve config has a decaying anti-snipe fee. With a flat fee (start equals end) the anti-snipe parts of the UI stay hidden.
+export const SNIPE_ON = SNIPE.startBps > SNIPE.endBps;
