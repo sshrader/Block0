@@ -27,7 +27,6 @@ Not legal advice. Costs are rough estimates unless a source is named.
 - [ ] Hosting with logs, error alerts, uptime monitoring.
 - [ ] Paid Pinata plan, or your own IPFS pinning.
 - [x] Mainnet support is in the code; follow `docs/MAINNET.md` for the steps and env vars (`VITE_CLUSTER=mainnet-beta`, `SOLANA_CLUSTER`, `MARKET_MODE=live`).
-- [ ] Set `LLM_DAILY_LIMIT` against real cost.
 
 ## 5. Security review
 - [ ] Third-party review of the server and the launch/trade flow. (No curve audit needed if you stay on Meteora's audited program.)
