@@ -18,6 +18,7 @@
     "dbc-config": "tsx scripts/dbc-create-config.ts",
     "dbc-inspect": "tsx scripts/dbc-inspect.ts",
     "dbc-fees": "tsx scripts/dbc-claim-fees.ts",
+    "key-base58": "tsx scripts/key-to-base58.ts",
     "dbc-migrate": "tsx scripts/dbc-migrate.ts"
   },
   "dependencies": {
