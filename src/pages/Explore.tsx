@@ -3,6 +3,7 @@ import { getAllMarkets, listCoins, type Coin, type Market } from '../lib/api';
 import { CURVE_ON } from '../config';
 import { href } from '../router';
 import CoinCard from '../components/CoinCard';
+import HeroChain from '../components/HeroChain';
 
 export default function Explore() {
   const [coins, setCoins] = useState<Coin[] | null>(null);
@@ -56,6 +57,8 @@ export default function Explore() {
           </div>
         </div>
       </section>
+
+      {CURVE_ON && <HeroChain />}
 
       <section className="filters">
         <h2>Launched coins{coins ? <span className="muted"> · {coins.length}</span> : null}</h2>
