@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><defs>
+<linearGradient id="g" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<linearGradient id="gu" gradientUnits="userSpaceOnUse" x1="238" y1="170" x2="786" y2="860"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.45" r="0.7"><stop offset="0" stop-color="#2b1a5e" stop-opacity="0.85"/><stop offset="1" stop-color="#08060f" stop-opacity="0"/></radialGradient>
+</defs><rect width="1024" height="1024" rx="224" fill="#08060f"/><rect width="1024" height="1024" rx="224" fill="url(#glow)"/><rect x="5" y="5" width="1014" height="1014" rx="219" fill="none" stroke="url(#g)" stroke-opacity="0.4" stroke-width="10"/>
+<path d="M512,140 L820,256 L820,520 C820,704 686,826 512,890 C338,826 204,704 204,520 L204,256 Z" fill="url(#g)"/>
+<rect x="412" y="332" width="200" height="340" rx="100" fill="none" stroke="#08060f" stroke-width="58"/>
+<rect x="480" y="480" width="64" height="64" rx="12" fill="#08060f"/></svg>

@@ -1,17 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Block0 logo">
-  <defs>
-    <linearGradient id="g" x1="0.1" y1="0" x2="0.9" y2="1">
-      <stop offset="0" stop-color="#a259ff"/>
-      <stop offset="1" stop-color="#14f195"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.7">
-      <stop offset="0" stop-color="#2b1a5e" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#08060f" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="1024" height="1024" rx="224" fill="#08060f"/>
-  <rect width="1024" height="1024" rx="224" fill="url(#glow)"/>
-  <rect x="5" y="5" width="1014" height="1014" rx="219" fill="none" stroke="url(#g)" stroke-opacity="0.45" stroke-width="10"/>
-  <rect x="316" y="196" width="392" height="632" rx="196" fill="none" stroke="url(#g)" stroke-width="104"/>
-  <rect x="440" y="440" width="144" height="144" rx="28" fill="url(#g)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><defs>
+<linearGradient id="g" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<linearGradient id="gu" gradientUnits="userSpaceOnUse" x1="238" y1="170" x2="786" y2="860"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.45" r="0.7"><stop offset="0" stop-color="#2b1a5e" stop-opacity="0.85"/><stop offset="1" stop-color="#08060f" stop-opacity="0"/></radialGradient>
+</defs><rect width="1024" height="1024" rx="224" fill="#08060f"/><rect width="1024" height="1024" rx="224" fill="url(#glow)"/><rect x="5" y="5" width="1014" height="1014" rx="219" fill="none" stroke="url(#g)" stroke-opacity="0.4" stroke-width="10"/><polygon points="512,182 798,347 798,677 512,842 226,677 226,347" fill="none" stroke="url(#g)" stroke-width="52" stroke-linejoin="round"/><rect x="432" y="382" width="160" height="260" rx="80" fill="none" stroke="url(#g)" stroke-width="44"/><circle cx="512" cy="182" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/><circle cx="798" cy="347" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/><circle cx="798" cy="677" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/><circle cx="512" cy="842" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/><circle cx="226" cy="677" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/><circle cx="226" cy="347" r="40" fill="#08060f" stroke="url(#g)" stroke-width="22"/></svg>

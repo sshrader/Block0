@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><defs>
+<linearGradient id="g" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<linearGradient id="gu" gradientUnits="userSpaceOnUse" x1="238" y1="170" x2="786" y2="860"><stop offset="0" stop-color="#a259ff"/><stop offset="1" stop-color="#14f195"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.45" r="0.7"><stop offset="0" stop-color="#2b1a5e" stop-opacity="0.85"/><stop offset="1" stop-color="#08060f" stop-opacity="0"/></radialGradient>
+</defs><rect width="1024" height="1024" rx="224" fill="#08060f"/><rect width="1024" height="1024" rx="224" fill="url(#glow)"/><rect x="5" y="5" width="1014" height="1014" rx="219" fill="none" stroke="url(#g)" stroke-opacity="0.4" stroke-width="10"/>
+<rect x="316" y="196" width="392" height="632" rx="196" fill="none" stroke="url(#g)" stroke-width="100"/>
+<path d="M600,150 L388,545 L512,545 L416,885 L684,425 L546,425 L652,150 Z" fill="#08060f" stroke="#08060f" stroke-width="44" stroke-linejoin="round"/>
+<path d="M600,150 L388,545 L512,545 L416,885 L684,425 L546,425 L652,150 Z" fill="#f0ecff" stroke="#f0ecff" stroke-width="6" stroke-linejoin="round"/></svg>
