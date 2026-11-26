@@ -9,8 +9,7 @@ export default function Launch({ balance, onCreated }: { balance: number | null;
         <p className="eyebrow mono">New coin</p>
         <h1>Launch a coin</h1>
         <p className="lede">
-          Fill in the basics. One wallet approval creates the token and its bonding-curve pool. Add a dev buy and it lands in the same transaction as the pool,
-          at the normal fee, before the anti-snipe fee ever applies to anyone else.
+          One wallet approval creates the token and its bonding curve. Add a dev buy and it goes in with the pool, at the lowest fee, before anyone else can trade.
         </p>
       </header>
       <div className="launch">

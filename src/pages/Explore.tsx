@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { getAllMarkets, listCoins, type Coin, type Market } from '../lib/api';
-import { CURVE_ON } from '../config';
+import { CURVE_ON, SNIPE } from '../config';
+import { pct } from '../lib/antisnipe';
 import { href } from '../router';
 import CoinCard from '../components/CoinCard';
 import HeroChain from '../components/HeroChain';
@@ -41,11 +42,20 @@ export default function Explore() {
       <section className="hero">
         <div>
           <p className="eyebrow mono">Solana memecoin launchpad · anti-snipe</p>
-          <h1>Fair launches. <span className="grad">Block zero belongs to the dev.</span></h1>
-          <p className="lede">
-            Every coin on Block0 trades on a Meteora bonding curve with a launch fee that starts high and decays fast. The creator's own buy is the only one
-            that skips it, so snipers pay for being early and everyone else gets a fairer entry.
-          </p>
+          {CURVE_ON ? (
+            <>
+              <h1>Sniping block 0 <span className="grad">costs {pct(SNIPE.startBps)}.</span></h1>
+              <p className="lede">
+                New coins open with a {pct(SNIPE.startBps)} trading fee that falls to {pct(SNIPE.endBps)} in about {Math.round(SNIPE.durationSlots * 0.4)} seconds. The dev's launch buy
+                skips it. Anyone who piles in early from another wallet pays it.
+              </p>
+            </>
+          ) : (
+            <>
+              <h1>Launch a coin <span className="grad">in one click.</span></h1>
+              <p className="lede">Connect a wallet, add an image and a name, and approve one transaction.</p>
+            </>
+          )}
           <div className="badges">
             <span className="badge">One-click launch</span>
             {CURVE_ON && <span className="badge">Trades on a bonding curve from the first second</span>}
